@@ -21,7 +21,7 @@ Company is extracting data from an Online Transaction Processing (OLTP) system. 
 
 Data includes information about as customer, transaction, date, market information, zone and product.
 
-![sql table](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/sql.PNG)
+![sql](https://github.com/DragnaRR/sales-insight/assets/95096810/7ec79aa2-cb7e-4b52-a9e9-2699037b84c8)
 
 In general, data is extracted from OLTP system, transformed into a format which that can be easily analyzed, then data is loaded loaded to a target environment like a OLAP system / data warehouse which can be analyzed using tools like Tableau.
 
@@ -99,16 +99,16 @@ During analysis on sql, its been observed that there are some outliers/errors th
 - currency should be in INR
 
 - **Importing data from Mysql**
-![data source](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/data_source.PNG)
+![data source](https://github.com/DragnaRR/sales-insight/assets/95096810/06f55c2c-53fa-4dc6-b696-803fcbde668d)
 
 - **Filtering sales_amount**
-![filter](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/datasource_filter.PNG)
+![filter](https://github.com/DragnaRR/sales-insight/assets/95096810/8befca95-5c30-4d85-a155-b7982a7694d1)
 
 - **Filtering out markets_code**
-![filter](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/data_filter_market_code.PNG)
+![filter](https://github.com/DragnaRR/sales-insight/assets/95096810/f155fdb2-2cf4-4d7d-a2c4-70e79b442190)
 
 - **Converting currency to INR**
-![calculated field](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/calculated%20field.PNG)
+![calculated field](https://github.com/DragnaRR/sales-insight/assets/95096810/52bf38f3-7ffa-48af-9eb4-256481b0b3e5)
 creating a calculated field
 ```
 IF [Currency] = 'USD' THEN [sales_amount]*83
@@ -119,22 +119,22 @@ END
 ## Data Anlysis in Tableau
 
 - **Market Revenue**
-![market revenue](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/Market_revenue.PNG)
+![Market revenue](https://github.com/DragnaRR/sales-insight/assets/95096810/4e5a4b6f-5b43-4685-a946-a566ebc3dd17)
 
 - **Market sales quantity**
-![market sales qunatity](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/market_sales_quantity.PNG)
+![market sales quantity](https://github.com/DragnaRR/sales-insight/assets/95096810/67398396-a558-4b9a-af35-105bca3f3598)
 
 - **Top 5 Customers**
-![top 5 customers](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/top_5_customer.PNG)
+![top 5 customer](https://github.com/DragnaRR/sales-insight/assets/95096810/6c1623d4-4f8f-4351-8580-169c3e2f0acd)
 
 - **Top 5 Products**
-![top 5 products](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/top_5_products.PNG)
+![top 5 products](https://github.com/DragnaRR/sales-insight/assets/95096810/4f39340c-15a1-43e8-a112-a417dc3d6284)
 
 - **Revenue by year**
-![revenue by year](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/revenue%20by%20year.PNG)
+![revenue by year](https://github.com/DragnaRR/sales-insight/assets/95096810/c214e1dd-5d4d-44b2-bf67-7a799834ddfd)
 
 - **Pie chart of customer type**
-![pie chart](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/piechart.PNG)
+![pie chart](https://github.com/DragnaRR/sales-insight/assets/95096810/5615d85f-83dd-4b66-b128-972000077300)
 
 - **Dashboard of sales insight**
-![sales insight](https://github.com/DragnaRR/sales-insight/blob/main/screenshots/sales_insight.PNG)
+![sales insight](https://github.com/DragnaRR/sales-insight/assets/95096810/b6aed0ed-ba92-469b-8da4-f4ea70b0e07b)
